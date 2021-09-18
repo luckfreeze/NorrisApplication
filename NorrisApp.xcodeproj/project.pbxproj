@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B15AE3425D15DA100B8E0D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B15AE3325D15DA100B8E0D0 /* AppDelegate.swift */; };
+		4B15AE3625D15DA100B8E0D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B15AE3525D15DA100B8E0D0 /* SceneDelegate.swift */; };
+		4B15AE3825D15DA100B8E0D0 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B15AE3725D15DA100B8E0D0 /* CategoriesViewController.swift */; };
+		4B15AE3B25D15DA100B8E0D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B15AE3925D15DA100B8E0D0 /* Main.storyboard */; };
+		4B15AE3D25D15DA400B8E0D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B15AE3C25D15DA400B8E0D0 /* Assets.xcassets */; };
+		4B15AE4025D15DA400B8E0D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B15AE3E25D15DA400B8E0D0 /* LaunchScreen.storyboard */; };
+		4B15AE6A25D15DD800B8E0D0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B15AE6925D15DD800B8E0D0 /* DetailViewController.swift */; };
+		4B15AE8225D1611200B8E0D0 /* NorrisNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B15AE8125D1611200B8E0D0 /* NorrisNetwork.swift */; };
+		4B15AE9625D1614200B8E0D0 /* NorrisUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B15AE9525D1614200B8E0D0 /* NorrisUrl.swift */; };
+		4B3B7D5525D1720700DB435B /* NorrisBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3B7D5425D1720700DB435B /* NorrisBusiness.swift */; };
+		4B3B7D5A25D1736200DB435B /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3B7D5925D1736200DB435B /* Categories.swift */; };
+		4B3B7D6325D1752B00DB435B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3B7D6225D1752B00DB435B /* Category.swift */; };
+		4B3B7D6D25D1787A00DB435B /* NorrisManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3B7D6C25D1787A00DB435B /* NorrisManager.swift */; };
+		4B3B7D7A25D18F4200DB435B /* GeneralExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3B7D7925D18F4200DB435B /* GeneralExtensions.swift */; };
+		4B3B7D8325D190A500DB435B /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3B7D8225D190A500DB435B /* ViewControllerExtensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B15AE3025D15DA100B8E0D0 /* NorrisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NorrisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B15AE3325D15DA100B8E0D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B15AE3525D15DA100B8E0D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4B15AE3725D15DA100B8E0D0 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		4B15AE3A25D15DA100B8E0D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B15AE3C25D15DA400B8E0D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B15AE3F25D15DA400B8E0D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B15AE4125D15DA400B8E0D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B15AE6925D15DD800B8E0D0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4B15AE8125D1611200B8E0D0 /* NorrisNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorrisNetwork.swift; sourceTree = "<group>"; };
+		4B15AE9525D1614200B8E0D0 /* NorrisUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorrisUrl.swift; sourceTree = "<group>"; };
+		4B3B7D5425D1720700DB435B /* NorrisBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorrisBusiness.swift; sourceTree = "<group>"; };
+		4B3B7D5925D1736200DB435B /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		4B3B7D6225D1752B00DB435B /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		4B3B7D6C25D1787A00DB435B /* NorrisManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorrisManager.swift; sourceTree = "<group>"; };
+		4B3B7D7925D18F4200DB435B /* GeneralExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralExtensions.swift; sourceTree = "<group>"; };
+		4B3B7D8225D190A500DB435B /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B15AE2D25D15DA100B8E0D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B15AE2725D15DA100B8E0D0 = {
+			isa = PBXGroup;
+			children = (
+				4B15AE3225D15DA100B8E0D0 /* NorrisApp */,
+				4B15AE3C25D15DA400B8E0D0 /* Assets.xcassets */,
+				4B15AE3125D15DA100B8E0D0 /* Products */,
+				675A9A7DE88C8107E066C5D4 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		4B15AE3125D15DA100B8E0D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B15AE3025D15DA100B8E0D0 /* NorrisApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B15AE3225D15DA100B8E0D0 /* NorrisApp */ = {
+			isa = PBXGroup;
+			children = (
+				4B15AE7225D1600C00B8E0D0 /* Features */,
+				4B15AE7B25D1603400B8E0D0 /* Storyboards */,
+				4B15AE8025D160FB00B8E0D0 /* Logic */,
+				4B3B7D5E25D1736500DB435B /* Model */,
+				4B3B7D9825D1B0B100DB435B /* Extensions */,
+				4B15AE6E25D15FFA00B8E0D0 /* SupportFiles */,
+			);
+			path = NorrisApp;
+			sourceTree = "<group>";
+		};
+		4B15AE6E25D15FFA00B8E0D0 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4B15AE3325D15DA100B8E0D0 /* AppDelegate.swift */,
+				4B15AE3525D15DA100B8E0D0 /* SceneDelegate.swift */,
+				4B15AE4125D15DA400B8E0D0 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		4B15AE7225D1600C00B8E0D0 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				4B15AE7625D1601800B8E0D0 /* Categories */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		4B15AE7625D1601800B8E0D0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4B3B7D7E25D1908400DB435B /* CategoriesExtensions */,
+				4B15AE3725D15DA100B8E0D0 /* CategoriesViewController.swift */,
+				4B15AE6925D15DD800B8E0D0 /* DetailViewController.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		4B15AE7B25D1603400B8E0D0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4B15AE7F25D1608C00B8E0D0 /* Main */,
+				4B15AE7E25D1608500B8E0D0 /* LaunchScreen */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4B15AE7E25D1608500B8E0D0 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4B15AE3E25D15DA400B8E0D0 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		4B15AE7F25D1608C00B8E0D0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4B15AE3925D15DA100B8E0D0 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4B15AE8025D160FB00B8E0D0 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				4B15AE8625D1611600B8E0D0 /* Network */,
+				4B3B7D6825D1768600DB435B /* Business */,
+				4B3B7D7125D17A5100DB435B /* Manager */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		4B15AE8625D1611600B8E0D0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4B15AE8125D1611200B8E0D0 /* NorrisNetwork.swift */,
+				4B15AE9525D1614200B8E0D0 /* NorrisUrl.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4B3B7D5E25D1736500DB435B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B3B7D5925D1736200DB435B /* Categories.swift */,
+				4B3B7D6225D1752B00DB435B /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4B3B7D6825D1768600DB435B /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				4B3B7D5425D1720700DB435B /* NorrisBusiness.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		4B3B7D7125D17A5100DB435B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4B3B7D6C25D1787A00DB435B /* NorrisManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		4B3B7D7E25D1908400DB435B /* CategoriesExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				4B3B7D8225D190A500DB435B /* ViewControllerExtensions.swift */,
+			);
+			path = CategoriesExtensions;
+			sourceTree = "<group>";
+		};
+		4B3B7D9825D1B0B100DB435B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4B3B7D7925D18F4200DB435B /* GeneralExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		675A9A7DE88C8107E066C5D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B15AE2F25D15DA100B8E0D0 /* NorrisApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B15AE5A25D15DA400B8E0D0 /* Build configuration list for PBXNativeTarget "NorrisApp" */;
+			buildPhases = (
+				4B15AE2C25D15DA100B8E0D0 /* Sources */,
+				4B15AE2D25D15DA100B8E0D0 /* Frameworks */,
+				4B15AE2E25D15DA100B8E0D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NorrisApp;
+			productName = NorrisApp;
+			productReference = 4B15AE3025D15DA100B8E0D0 /* NorrisApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B15AE2825D15DA100B8E0D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					4B15AE2F25D15DA100B8E0D0 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 4B15AE2B25D15DA100B8E0D0 /* Build configuration list for PBXProject "NorrisApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B15AE2725D15DA100B8E0D0;
+			productRefGroup = 4B15AE3125D15DA100B8E0D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B15AE2F25D15DA100B8E0D0 /* NorrisApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B15AE2E25D15DA100B8E0D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B15AE4025D15DA400B8E0D0 /* LaunchScreen.storyboard in Resources */,
+				4B15AE3D25D15DA400B8E0D0 /* Assets.xcassets in Resources */,
+				4B15AE3B25D15DA100B8E0D0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B15AE2C25D15DA100B8E0D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B15AE3825D15DA100B8E0D0 /* CategoriesViewController.swift in Sources */,
+				4B3B7D5A25D1736200DB435B /* Categories.swift in Sources */,
+				4B3B7D7A25D18F4200DB435B /* GeneralExtensions.swift in Sources */,
+				4B15AE3425D15DA100B8E0D0 /* AppDelegate.swift in Sources */,
+				4B3B7D8325D190A500DB435B /* ViewControllerExtensions.swift in Sources */,
+				4B15AE8225D1611200B8E0D0 /* NorrisNetwork.swift in Sources */,
+				4B3B7D6D25D1787A00DB435B /* NorrisManager.swift in Sources */,
+				4B15AE3625D15DA100B8E0D0 /* SceneDelegate.swift in Sources */,
+				4B3B7D6325D1752B00DB435B /* Category.swift in Sources */,
+				4B15AE6A25D15DD800B8E0D0 /* DetailViewController.swift in Sources */,
+				4B15AE9625D1614200B8E0D0 /* NorrisUrl.swift in Sources */,
+				4B3B7D5525D1720700DB435B /* NorrisBusiness.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4B15AE3925D15DA100B8E0D0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B15AE3A25D15DA100B8E0D0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4B15AE3E25D15DA400B8E0D0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B15AE3F25D15DA400B8E0D0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B15AE5825D15DA400B8E0D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B15AE5925D15DA400B8E0D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B15AE5B25D15DA400B8E0D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YMJ3466P6S;
+				INFOPLIST_FILE = "$(SRCROOT)/NorrisApp/SupportFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.Lsolutions.NorrisApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4B15AE5C25D15DA400B8E0D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YMJ3466P6S;
+				INFOPLIST_FILE = "$(SRCROOT)/NorrisApp/SupportFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.Lsolutions.NorrisApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B15AE2B25D15DA100B8E0D0 /* Build configuration list for PBXProject "NorrisApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B15AE5825D15DA400B8E0D0 /* Debug */,
+				4B15AE5925D15DA400B8E0D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B15AE5A25D15DA400B8E0D0 /* Build configuration list for PBXNativeTarget "NorrisApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B15AE5B25D15DA400B8E0D0 /* Debug */,
+				4B15AE5C25D15DA400B8E0D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B15AE2825D15DA100B8E0D0 /* Project object */;
+}
