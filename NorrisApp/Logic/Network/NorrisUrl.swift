@@ -29,18 +29,3 @@ enum NorrisUrl {
       return "https://api.chucknorris.io/jokes/"
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

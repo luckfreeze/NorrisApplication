@@ -9,8 +9,9 @@ import Foundation
 
 enum NorrisSuccessType {
     case successOnCategory(Category)
-    case successOnCategories(Categories)
+    case successOnCategories([String]?)
     case successOnRandom
+    case empty
 }
 
 enum NorrisErrorType {
@@ -18,17 +19,22 @@ enum NorrisErrorType {
     case errorOnDecoded
 }
 
-protocol NorrisManagerDelegate: class {
+protocol NorrisManagerDelegate: AnyObject {
     func handleSuccess(type: NorrisSuccessType)
     func handleError(type: NorrisErrorType)
 }
 
-class NorrisManager {
+protocol NorrisManagerType {
+    func getCategories()
+    func getCategory(_ detail: String)
+}
+
+class NorrisManager: NorrisManagerType {
     
-    private weak var delegate: NorrisManagerDelegate?
-    private var business: NorrisBusiness?
+    weak var delegate: NorrisManagerDelegate?
+    var business: NorrisBusinessType?
     
-    public init(delegate: NorrisManagerDelegate, business: NorrisBusiness? = NorrisBusiness()) {
+    public init(delegate: NorrisManagerDelegate, business: NorrisBusinessType? = NorrisBusiness()) {
         self.delegate = delegate
         self.business = business
     }
@@ -39,13 +45,13 @@ class NorrisManager {
             switch statusCode {
                 case 200:
                     
-                    guard let safeCategories = categories else {
-                        self.delegate?.handleError(type: .errorOnDecoded)
+                    guard let allCategories = categories?.categories else {
+                        self.delegate?.handleSuccess(type: .empty)
                         return
                     }
-
-                    self.delegate?.handleSuccess(type: .successOnCategories(safeCategories))
-
+                    
+                    self.delegate?.handleSuccess(type: .successOnCategories(allCategories))
+                    
                     break
                 default:
                     self.delegate?.handleError(type: .error)

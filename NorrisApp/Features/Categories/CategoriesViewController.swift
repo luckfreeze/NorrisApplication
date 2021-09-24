@@ -15,7 +15,7 @@ class CategoriesViewController: UIViewController {
     
     lazy var manager = NorrisManager(delegate: self)
     
-    var categories: Categories?
+    var categories: [String]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,5 +43,3 @@ class CategoriesViewController: UIViewController {
         }
     }
 }
-
-

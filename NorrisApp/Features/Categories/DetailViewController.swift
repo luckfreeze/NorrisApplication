@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Nuke
 
 class DetailViewController: UIViewController {
     
@@ -55,11 +54,15 @@ extension DetailViewController: NorrisManagerDelegate {
         DispatchQueue.main.async {
             
             self.descriptionLabel.text = category.description
-            let imageUrl = URL(string: category.iconUrl!)?.asImageRequest()
-            
-            Nuke.loadImage(with: imageUrl!, into: self.thumbImageView) { ( _, _)  in
-                self.animateImageViewAndLoading()
+
+            guard let imageUrl = URL(string: category.iconUrl!),
+                  let imageData = try? Data(contentsOf: imageUrl) else {
+                self.thumbImageView.image = UIImage()
+                return
             }
+            
+            self.thumbImageView.image = UIImage(data: imageData)
+            self.animateImageViewAndLoading()
         }
     }
     

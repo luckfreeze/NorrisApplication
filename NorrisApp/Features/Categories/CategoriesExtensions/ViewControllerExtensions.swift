@@ -31,7 +31,7 @@ extension CategoriesViewController: NorrisManagerDelegate {
         }
     }
     
-    func reloadTableView(with cat: Categories) {
+    func reloadTableView(with cat: [String]?) {
         DispatchQueue.main.async {
             self.categories = cat
             self.tableView.reloadData()
@@ -50,26 +50,21 @@ extension CategoriesViewController: NorrisManagerDelegate {
 
 extension CategoriesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        goToCategory(detail: categories?.categories?[indexPath.row])
+        goToCategory(detail: categories?[indexPath.row])
     }
 }
 
 extension CategoriesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return categories?.categories?.count ?? 0
+        return categories?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "norrisCell", for: indexPath)
         
-        
-        cell.textLabel?.text = categories?.categories?[indexPath.row]
-        
-        
+        cell.textLabel?.text = categories?[indexPath.row]
         cell.selectionStyle = .none
-        
         
         return cell
     }

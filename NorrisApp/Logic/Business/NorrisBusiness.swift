@@ -7,31 +7,28 @@
 
 import Foundation
 
-class NorrisBusiness {
+protocol NorrisBusinessType {
+    func getCategories(completion: @escaping (_ categories: Categories?, _ statusCode: Int) -> Void)
+    func getCategory(_ detail: String, completion: @escaping (_ categories: Category?, _ statusCode: Int) -> Void)
+}
+
+class NorrisBusiness: NorrisBusinessType {
     
     var network: NorrisNetworkType?
     
-    init(network: NorrisNetworkType = NorrisNetwork()) {
+    init(network: NorrisNetworkType? = NorrisNetwork()) {
         self.network = network
     }
-    
-    
-    
-    
-    
-    
-    
-    
     
     func getCategories(completion: @escaping (_ categories: Categories?, _ statusCode: Int) -> Void) {
         network?.getCategories(completion: { (data, urlResponse, error) in
             guard let response = urlResponse as? HTTPURLResponse,
                   let norrisData = data else { return }
-            
-            if error != nil {
+
+            if response.statusCode != 200 {
                 completion(nil, response.statusCode)
             } else {
-                
+
                 let dataDecoded = try? JSONDecoder().decode([String].self, from: norrisData)
                 let categories = Categories.init(dataDecoded)
                 completion(categories, response.statusCode)
@@ -39,22 +36,13 @@ class NorrisBusiness {
         })
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
     func getCategory(_ detail: String, completion: @escaping (_ categories: Category?, _ statusCode: Int) -> Void) {
         
         network?.getCategory(detail, completion: { (data, urlResponse, error) in
             guard let response = urlResponse as? HTTPURLResponse,
                   let norrisData = data else { return }
             
-            if error != nil {
+            if response.statusCode != 200 {
                 completion(nil, response.statusCode)
             } else {
                 
@@ -64,21 +52,3 @@ class NorrisBusiness {
         })
     }
 }
-
-
-
-
-
-
-/*
- 
- 
- ["animal","career","celebrity","dev","explicit","fashion","food","history","money","movie","music","political","religion","science","sport","travel"]
- 
- 
- 
- 
- */
-
-
-
