@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,7 +22,9 @@
 		4B3B7D6D25D1787A00DB435B /* NorrisManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3B7D6C25D1787A00DB435B /* NorrisManager.swift */; };
 		4B3B7D7A25D18F4200DB435B /* GeneralExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3B7D7925D18F4200DB435B /* GeneralExtensions.swift */; };
 		4B3B7D8325D190A500DB435B /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3B7D8225D190A500DB435B /* ViewControllerExtensions.swift */; };
+		5AEEA9EF31C7F709114E52FF /* Pods_NorrisApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0690823826C249DF500CCC /* Pods_NorrisApp.framework */; };
 		E51B5ADA26F83994008590A0 /* NorrisNetworkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51B5AD926F83994008590A0 /* NorrisNetworkTest.swift */; };
+		E58FDA9227124DC6005043E7 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58FDA9127124DC6005043E7 /* AlertService.swift */; };
 		E5D0512326F91FF40047F6F5 /* NorrisURLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D0512226F91FF40047F6F5 /* NorrisURLProtocolMock.swift */; };
 		E5D0512626F920550047F6F5 /* ResultsMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D0512526F920550047F6F5 /* ResultsMock.swift */; };
 		E5D0512826F923190047F6F5 /* NorrisBusinessTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D0512726F923190047F6F5 /* NorrisBusinessTest.swift */; };
@@ -40,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A0690823826C249DF500CCC /* Pods_NorrisApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NorrisApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B15AE3025D15DA100B8E0D0 /* NorrisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NorrisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B15AE3325D15DA100B8E0D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B15AE3525D15DA100B8E0D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,9 +60,12 @@
 		4B3B7D6C25D1787A00DB435B /* NorrisManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorrisManager.swift; sourceTree = "<group>"; };
 		4B3B7D7925D18F4200DB435B /* GeneralExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralExtensions.swift; sourceTree = "<group>"; };
 		4B3B7D8225D190A500DB435B /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
+		56E5F69FD2A4DAD09B7D0419 /* Pods-NorrisApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NorrisApp.release.xcconfig"; path = "Target Support Files/Pods-NorrisApp/Pods-NorrisApp.release.xcconfig"; sourceTree = "<group>"; };
+		C39B49D1F938789DF4462B44 /* Pods-NorrisApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NorrisApp.debug.xcconfig"; path = "Target Support Files/Pods-NorrisApp/Pods-NorrisApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E51B5AD726F83994008590A0 /* NorrisAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NorrisAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E51B5AD926F83994008590A0 /* NorrisNetworkTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorrisNetworkTest.swift; sourceTree = "<group>"; };
 		E51B5ADB26F83994008590A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E58FDA9127124DC6005043E7 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		E5D0512226F91FF40047F6F5 /* NorrisURLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorrisURLProtocolMock.swift; sourceTree = "<group>"; };
 		E5D0512526F920550047F6F5 /* ResultsMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsMock.swift; sourceTree = "<group>"; };
 		E5D0512726F923190047F6F5 /* NorrisBusinessTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorrisBusinessTest.swift; sourceTree = "<group>"; };
@@ -71,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AEEA9EF31C7F709114E52FF /* Pods_NorrisApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +98,8 @@
 				4B15AE3C25D15DA400B8E0D0 /* Assets.xcassets */,
 				E51B5AD826F83994008590A0 /* NorrisAppTests */,
 				4B15AE3125D15DA100B8E0D0 /* Products */,
+				C405EA4D94B11444EC9DE23C /* Pods */,
+				A5CC74E711B98CD6D074618C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +120,7 @@
 				4B15AE8025D160FB00B8E0D0 /* Logic */,
 				4B3B7D5E25D1736500DB435B /* Model */,
 				4B3B7D9825D1B0B100DB435B /* Extensions */,
+				E58FDA9327124DD0005043E7 /* Services */,
 				4B15AE6E25D15FFA00B8E0D0 /* SupportFiles */,
 			);
 			path = NorrisApp;
@@ -229,6 +239,23 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		A5CC74E711B98CD6D074618C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A0690823826C249DF500CCC /* Pods_NorrisApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C405EA4D94B11444EC9DE23C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C39B49D1F938789DF4462B44 /* Pods-NorrisApp.debug.xcconfig */,
+				56E5F69FD2A4DAD09B7D0419 /* Pods-NorrisApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E51B5AD826F83994008590A0 /* NorrisAppTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +266,14 @@
 				E5D0512426F920400047F6F5 /* SupportFiles */,
 			);
 			path = NorrisAppTests;
+			sourceTree = "<group>";
+		};
+		E58FDA9327124DD0005043E7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E58FDA9127124DC6005043E7 /* AlertService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		E5D0512126F91FCD0047F6F5 /* Network */ = {
@@ -281,9 +316,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B15AE5A25D15DA400B8E0D0 /* Build configuration list for PBXNativeTarget "NorrisApp" */;
 			buildPhases = (
+				FC5AC254BC084DE1C78EDF73 /* [CP] Check Pods Manifest.lock */,
 				4B15AE2C25D15DA100B8E0D0 /* Sources */,
 				4B15AE2D25D15DA100B8E0D0 /* Frameworks */,
 				4B15AE2E25D15DA100B8E0D0 /* Resources */,
+				F96E9817ED963D2AA1C6EFBD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -369,12 +406,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F96E9817ED963D2AA1C6EFBD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NorrisApp/Pods-NorrisApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NorrisApp/Pods-NorrisApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NorrisApp/Pods-NorrisApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC5AC254BC084DE1C78EDF73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NorrisApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4B15AE2C25D15DA100B8E0D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4B15AE3825D15DA100B8E0D0 /* CategoriesViewController.swift in Sources */,
+				E58FDA9227124DC6005043E7 /* AlertService.swift in Sources */,
 				4B3B7D5A25D1736200DB435B /* Categories.swift in Sources */,
 				4B3B7D7A25D18F4200DB435B /* GeneralExtensions.swift in Sources */,
 				4B15AE3425D15DA100B8E0D0 /* AppDelegate.swift in Sources */,
@@ -549,6 +629,7 @@
 		};
 		4B15AE5B25D15DA400B8E0D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C39B49D1F938789DF4462B44 /* Pods-NorrisApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -569,6 +650,7 @@
 		};
 		4B15AE5C25D15DA400B8E0D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56E5F69FD2A4DAD09B7D0419 /* Pods-NorrisApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

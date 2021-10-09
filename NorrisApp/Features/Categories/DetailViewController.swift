@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class DetailViewController: UIViewController {
     
@@ -46,7 +47,9 @@ extension DetailViewController: NorrisManagerDelegate {
     func handleError(type: NorrisErrorType) {
         switch type {
             default:
-                break
+            AlertService.default(in: self, with: "Ops", message: "Algo deu errado, não conseguimos completar seu pedido") {
+                self.navigationController?.popViewController(animated: true)
+            }
         }
     }
     
@@ -54,15 +57,12 @@ extension DetailViewController: NorrisManagerDelegate {
         DispatchQueue.main.async {
             
             self.descriptionLabel.text = category.description
-
-            guard let imageUrl = URL(string: category.iconUrl!),
-                  let imageData = try? Data(contentsOf: imageUrl) else {
-                self.thumbImageView.image = UIImage()
-                return
-            }
+            let imageUrl = URL(string: category.iconUrl!)
             
-            self.thumbImageView.image = UIImage(data: imageData)
-            self.animateImageViewAndLoading()
+            let imageRecource = ImageResource(downloadURL: imageUrl!)
+            self.thumbImageView.kf.setImage(with: imageRecource) { result in
+                self.animateImageViewAndLoading()
+            }
         }
     }
     

@@ -3,15 +3,6 @@
 
 target 'NorrisApp' do
   use_frameworks!
-	pod 'Nuke'
-
-  # Pods for NorrisApp
-
-  target 'NorrisAppTests' do
-    inherit! :search_paths
-  end
-
-  target 'NorrisAppUITests' do
-  end
+	pod 'Kingfisher', '~> 6.3.1'
 
 end
