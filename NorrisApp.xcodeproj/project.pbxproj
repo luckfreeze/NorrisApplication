@@ -95,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				4B15AE3225D15DA100B8E0D0 /* NorrisApp */,
-				4B15AE3C25D15DA400B8E0D0 /* Assets.xcassets */,
 				E51B5AD826F83994008590A0 /* NorrisAppTests */,
 				4B15AE3125D15DA100B8E0D0 /* Products */,
 				C405EA4D94B11444EC9DE23C /* Pods */,
@@ -129,6 +128,7 @@
 		4B15AE6E25D15FFA00B8E0D0 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				4B15AE3C25D15DA400B8E0D0 /* Assets.xcassets */,
 				4B15AE3325D15DA100B8E0D0 /* AppDelegate.swift */,
 				4B15AE3525D15DA100B8E0D0 /* SceneDelegate.swift */,
 				4B15AE4125D15DA400B8E0D0 /* Info.plist */,
