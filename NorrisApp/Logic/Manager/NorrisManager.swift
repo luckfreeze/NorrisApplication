@@ -33,7 +33,7 @@ class NorrisManager: NorrisManagerType {
     weak var delegate: NorrisManagerDelegate?
     var business: NorrisBusinessType?
     
-    public init(delegate: NorrisManagerDelegate, business: NorrisBusinessType? = NorrisBusiness()) {
+    init(delegate: NorrisManagerDelegate, business: NorrisBusinessType? = NorrisBusiness()) {
         self.delegate = delegate
         self.business = business
     }

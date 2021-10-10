@@ -28,7 +28,6 @@ class NorrisURLProtocolMock: URLProtocol {
         return request
     }
     
-    
     override func startLoading() {
         
         switch NorrisURLProtocolMock.responseType {

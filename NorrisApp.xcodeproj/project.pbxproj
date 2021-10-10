@@ -25,6 +25,7 @@
 		5AEEA9EF31C7F709114E52FF /* Pods_NorrisApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0690823826C249DF500CCC /* Pods_NorrisApp.framework */; };
 		E51B5ADA26F83994008590A0 /* NorrisNetworkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51B5AD926F83994008590A0 /* NorrisNetworkTest.swift */; };
 		E58FDA9227124DC6005043E7 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58FDA9127124DC6005043E7 /* AlertService.swift */; };
+		E58FDAA027134899005043E7 /* PrettyJsonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58FDA9F27134899005043E7 /* PrettyJsonTest.swift */; };
 		E5D0512326F91FF40047F6F5 /* NorrisURLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D0512226F91FF40047F6F5 /* NorrisURLProtocolMock.swift */; };
 		E5D0512626F920550047F6F5 /* ResultsMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D0512526F920550047F6F5 /* ResultsMock.swift */; };
 		E5D0512826F923190047F6F5 /* NorrisBusinessTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D0512726F923190047F6F5 /* NorrisBusinessTest.swift */; };
@@ -66,6 +67,7 @@
 		E51B5AD926F83994008590A0 /* NorrisNetworkTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorrisNetworkTest.swift; sourceTree = "<group>"; };
 		E51B5ADB26F83994008590A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E58FDA9127124DC6005043E7 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		E58FDA9F27134899005043E7 /* PrettyJsonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettyJsonTest.swift; sourceTree = "<group>"; };
 		E5D0512226F91FF40047F6F5 /* NorrisURLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorrisURLProtocolMock.swift; sourceTree = "<group>"; };
 		E5D0512526F920550047F6F5 /* ResultsMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsMock.swift; sourceTree = "<group>"; };
 		E5D0512726F923190047F6F5 /* NorrisBusinessTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorrisBusinessTest.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 				E5D0512126F91FCD0047F6F5 /* Network */,
 				E5D0512926F923320047F6F5 /* Business */,
 				E5D0512C26FB92940047F6F5 /* Manager */,
+				E58FDAA1271348A8005043E7 /* ExtensionsTest */,
 				E5D0512426F920400047F6F5 /* SupportFiles */,
 			);
 			path = NorrisAppTests;
@@ -274,6 +277,14 @@
 				E58FDA9127124DC6005043E7 /* AlertService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		E58FDAA1271348A8005043E7 /* ExtensionsTest */ = {
+			isa = PBXGroup;
+			children = (
+				E58FDA9F27134899005043E7 /* PrettyJsonTest.swift */,
+			);
+			path = ExtensionsTest;
 			sourceTree = "<group>";
 		};
 		E5D0512126F91FCD0047F6F5 /* Network */ = {
@@ -478,6 +489,7 @@
 				E51B5ADA26F83994008590A0 /* NorrisNetworkTest.swift in Sources */,
 				E5D0512B26FB92850047F6F5 /* NorrisManagerTests.swift in Sources */,
 				E5D0512626F920550047F6F5 /* ResultsMock.swift in Sources */,
+				E58FDAA027134899005043E7 /* PrettyJsonTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
