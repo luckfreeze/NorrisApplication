@@ -53,7 +53,7 @@ extension DetailViewController: NorrisManagerDelegate {
         }
     }
     
-    func loadDataOnScreen(using category: Category) {
+    func loadDataOnScreen(using category: SingleCategory) {
         DispatchQueue.main.async {
             
             self.descriptionLabel.text = category.description

@@ -18,7 +18,7 @@
 		4B15AE9625D1614200B8E0D0 /* NorrisUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B15AE9525D1614200B8E0D0 /* NorrisUrl.swift */; };
 		4B3B7D5525D1720700DB435B /* NorrisBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3B7D5425D1720700DB435B /* NorrisBusiness.swift */; };
 		4B3B7D5A25D1736200DB435B /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3B7D5925D1736200DB435B /* Categories.swift */; };
-		4B3B7D6325D1752B00DB435B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3B7D6225D1752B00DB435B /* Category.swift */; };
+		4B3B7D6325D1752B00DB435B /* SingleCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3B7D6225D1752B00DB435B /* SingleCategory.swift */; };
 		4B3B7D6D25D1787A00DB435B /* NorrisManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3B7D6C25D1787A00DB435B /* NorrisManager.swift */; };
 		4B3B7D7A25D18F4200DB435B /* GeneralExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3B7D7925D18F4200DB435B /* GeneralExtensions.swift */; };
 		4B3B7D8325D190A500DB435B /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3B7D8225D190A500DB435B /* ViewControllerExtensions.swift */; };
@@ -56,7 +56,7 @@
 		4B15AE9525D1614200B8E0D0 /* NorrisUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorrisUrl.swift; sourceTree = "<group>"; };
 		4B3B7D5425D1720700DB435B /* NorrisBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorrisBusiness.swift; sourceTree = "<group>"; };
 		4B3B7D5925D1736200DB435B /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
-		4B3B7D6225D1752B00DB435B /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		4B3B7D6225D1752B00DB435B /* SingleCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCategory.swift; sourceTree = "<group>"; };
 		4B3B7D6C25D1787A00DB435B /* NorrisManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorrisManager.swift; sourceTree = "<group>"; };
 		4B3B7D7925D18F4200DB435B /* GeneralExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralExtensions.swift; sourceTree = "<group>"; };
 		4B3B7D8225D190A500DB435B /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
@@ -202,7 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				4B3B7D5925D1736200DB435B /* Categories.swift */,
-				4B3B7D6225D1752B00DB435B /* Category.swift */,
+				4B3B7D6225D1752B00DB435B /* SingleCategory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -462,7 +462,7 @@
 				4B15AE8225D1611200B8E0D0 /* NorrisNetwork.swift in Sources */,
 				4B3B7D6D25D1787A00DB435B /* NorrisManager.swift in Sources */,
 				4B15AE3625D15DA100B8E0D0 /* SceneDelegate.swift in Sources */,
-				4B3B7D6325D1752B00DB435B /* Category.swift in Sources */,
+				4B3B7D6325D1752B00DB435B /* SingleCategory.swift in Sources */,
 				4B15AE6A25D15DD800B8E0D0 /* DetailViewController.swift in Sources */,
 				4B15AE9625D1614200B8E0D0 /* NorrisUrl.swift in Sources */,
 				4B3B7D5525D1720700DB435B /* NorrisBusiness.swift in Sources */,

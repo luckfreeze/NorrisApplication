@@ -1,5 +1,5 @@
 //
-//  Category.swift
+//  SingleCategory.swift
 //  NorrisApp
 //
 //  Created by Lucas Moraes on 08/02/21.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Category: Codable {
+class SingleCategory: Codable {
     let categories: [String]?
     let createdAt: String?
     let iconUrl: String?
@@ -26,4 +26,6 @@ class Category: Codable {
         case url
         case description = "value"
     }
+    
+//    init() {}
 }

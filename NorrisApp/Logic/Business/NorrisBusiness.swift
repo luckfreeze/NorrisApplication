@@ -9,7 +9,7 @@ import Foundation
 
 protocol NorrisBusinessType {
     func getCategories(completion: @escaping (_ categories: Categories?, _ statusCode: Int) -> Void)
-    func getCategory(_ detail: String, completion: @escaping (_ categories: Category?, _ statusCode: Int) -> Void)
+    func getCategory(_ detail: String, completion: @escaping (_ categories: SingleCategory?, _ statusCode: Int) -> Void)
 }
 
 class NorrisBusiness: NorrisBusinessType {
@@ -36,7 +36,7 @@ class NorrisBusiness: NorrisBusinessType {
         })
     }
     
-    func getCategory(_ detail: String, completion: @escaping (_ categories: Category?, _ statusCode: Int) -> Void) {
+    func getCategory(_ detail: String, completion: @escaping (_ categories: SingleCategory?, _ statusCode: Int) -> Void) {
         
         network?.getCategory(detail, completion: { (data, urlResponse, error) in
             guard let response = urlResponse as? HTTPURLResponse,
@@ -46,7 +46,7 @@ class NorrisBusiness: NorrisBusinessType {
                 completion(nil, response.statusCode)
             } else {
                 
-                let dataDecoded = try? JSONDecoder().decode(Category.self, from: norrisData)
+                let dataDecoded = try? JSONDecoder().decode(SingleCategory.self, from: norrisData)
                 completion(dataDecoded, response.statusCode)
             }
         })

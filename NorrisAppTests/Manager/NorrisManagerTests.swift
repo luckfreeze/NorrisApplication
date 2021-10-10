@@ -18,6 +18,9 @@ class NorrisManagerTests: XCTestCase {
     
     var expectation: XCTestExpectation?
     var categories: [String]?
+    var singleCategory: SingleCategory?
+    
+    let detail = "animal"
     
     override func setUpWithError() throws {
         super.setUp()
@@ -33,6 +36,7 @@ class NorrisManagerTests: XCTestCase {
         super.tearDown()
         business = nil
         network = nil
+        singleCategory = nil
 
         NorrisURLProtocolMock.stubResponseData = nil
         NorrisURLProtocolMock.responseType = .none
@@ -77,6 +81,44 @@ class NorrisManagerTests: XCTestCase {
         
         XCTAssertNil(categories)
     }
+    
+    func testGetCategorySuccess() {
+        
+        NorrisURLProtocolMock.stubResponseData = mock.categoryDataSuccess
+        NorrisURLProtocolMock.responseType = .success
+        
+        expectation = expectation(description: "test success on getCategory from NorrisManagerDelegate's protocol")
+        manager?.getCategory(detail)
+        
+        waitForExpectations(timeout: 1)
+        
+        XCTAssertNotNil(singleCategory)
+    }
+    
+    func testGetCategoryEmpty() {
+        
+        NorrisURLProtocolMock.stubResponseData = mock.emptyData
+        NorrisURLProtocolMock.responseType = .empty
+        
+        expectation = expectation(description: "test empty case on getCategory from NorrisManagerDelegate's protocol")
+        manager?.getCategory(detail)
+        
+        waitForExpectations(timeout: 1)
+        
+        XCTAssertNil(singleCategory)
+    }
+    
+    func testGetCategoryError() {
+        
+        NorrisURLProtocolMock.responseType = .error
+        
+        expectation = expectation(description: "test error on getCategory from NorrisManagerDelegate's protocol")
+        manager?.getCategory(detail)
+        
+        waitForExpectations(timeout: 1)
+        
+        XCTAssertNil(singleCategory)
+    }
    
 }
 
@@ -91,6 +133,9 @@ extension NorrisManagerTests: NorrisManagerDelegate {
         case .empty:
             expectation?.fulfill()
             
+        case .successOnCategory(let singleCat):
+            self.singleCategory = singleCat
+            expectation?.fulfill()
         default:
             break
         }
@@ -98,7 +143,7 @@ extension NorrisManagerTests: NorrisManagerDelegate {
     
     func handleError(type: NorrisErrorType) {
         switch type {
-        case .error, .errorOnDecoded:
+        case .error:
             expectation?.fulfill()
             
         }

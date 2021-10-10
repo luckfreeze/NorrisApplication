@@ -88,4 +88,61 @@ class NorrisBusinessTest: XCTestCase {
         XCTAssertEqual(statusCode, 400)
 
     }
+    
+    func testGetCategorySuccess() {
+
+        let expectation = self.expectation(description: "test success on getCategory from NorrisBusinessType's protocol")
+
+        var categoryRaw: SingleCategory?
+        var statusCode: Int?
+        let detail = "something"
+
+        NorrisURLProtocolMock.stubResponseData = mock.categoryDataSuccess
+        NorrisURLProtocolMock.responseType = .success
+
+        business?.getCategory(detail, completion: { caty, sC in
+            
+            categoryRaw = caty
+            statusCode = sC
+            
+            expectation.fulfill()
+        })
+
+        waitForExpectations(timeout: 1)
+
+        let category = try? XCTUnwrap(categoryRaw)
+
+        XCTAssertNotNil(category?.categories)
+        XCTAssertNotNil(category?.description)
+        XCTAssertNotNil(category?.url)
+        XCTAssertEqual(statusCode, 200)
+
+    }
+    
+    func testGetCategoryError() {
+
+        let expectation = self.expectation(description: "test error on getCategory from NorrisBusinessType's protocol")
+
+        var category: SingleCategory?
+        var statusCode: Int?
+        let detail = "something"
+
+        NorrisURLProtocolMock.responseType = .error
+
+        business?.getCategory(detail, completion: { caty, sC in
+            
+            category = caty
+            statusCode = sC
+            
+            expectation.fulfill()
+        })
+
+        waitForExpectations(timeout: 1)
+
+        XCTAssertNil(category?.categories)
+        XCTAssertNil(category?.description)
+        XCTAssertNil(category?.url)
+        XCTAssertEqual(statusCode, 400)
+
+    }
 }
