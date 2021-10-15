@@ -79,18 +79,3 @@ extension CategoriesViewController {
         self.navigationController?.pushViewController(detailVC, animated: true)
     }
 }
-
-
-
-
-
-
-class AstonMartim {
-    
-    // atributo = característica
-    let cor = UIColor.gray
-    
-    
-    
-    
-}

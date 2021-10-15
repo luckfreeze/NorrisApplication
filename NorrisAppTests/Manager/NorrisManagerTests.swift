@@ -24,10 +24,8 @@ class NorrisManagerTests: XCTestCase {
     
     override func setUpWithError() throws {
         super.setUp()
-        let sessionConfiguration = URLSessionConfiguration.default
-        sessionConfiguration.protocolClasses = [NorrisURLProtocolMock.self]
         
-        network = NorrisNetwork(sessionConfig: sessionConfiguration)
+        network = NorrisNetwork(sessionConfig: NorrisURLProtocolMock.sessionConfiguration())
         business = NorrisBusiness(network: network)
         manager = NorrisManager(delegate: self, business: business)
     }

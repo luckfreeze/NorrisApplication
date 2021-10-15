@@ -15,9 +15,8 @@ class NorrisNetworkTest: XCTestCase {
 
     override func setUpWithError() throws {
         super.setUp()
-        let sessionConfiguration = URLSessionConfiguration.default
-        sessionConfiguration.protocolClasses = [NorrisURLProtocolMock.self]
-        network = NorrisNetwork(sessionConfig: sessionConfiguration)
+        
+        network = NorrisNetwork(sessionConfig: NorrisURLProtocolMock.sessionConfiguration())
     }
 
     override func tearDownWithError() throws {

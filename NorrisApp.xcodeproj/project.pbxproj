@@ -23,10 +23,10 @@
 		4B3B7D7A25D18F4200DB435B /* GeneralExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3B7D7925D18F4200DB435B /* GeneralExtensions.swift */; };
 		4B3B7D8325D190A500DB435B /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3B7D8225D190A500DB435B /* ViewControllerExtensions.swift */; };
 		5AEEA9EF31C7F709114E52FF /* Pods_NorrisApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0690823826C249DF500CCC /* Pods_NorrisApp.framework */; };
+		E51A4FE62719060200FC46A2 /* NorrisURLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D0512226F91FF40047F6F5 /* NorrisURLProtocolMock.swift */; };
 		E51B5ADA26F83994008590A0 /* NorrisNetworkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51B5AD926F83994008590A0 /* NorrisNetworkTest.swift */; };
 		E58FDA9227124DC6005043E7 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58FDA9127124DC6005043E7 /* AlertService.swift */; };
 		E58FDAA027134899005043E7 /* PrettyJsonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58FDA9F27134899005043E7 /* PrettyJsonTest.swift */; };
-		E5D0512326F91FF40047F6F5 /* NorrisURLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D0512226F91FF40047F6F5 /* NorrisURLProtocolMock.swift */; };
 		E5D0512626F920550047F6F5 /* ResultsMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D0512526F920550047F6F5 /* ResultsMock.swift */; };
 		E5D0512826F923190047F6F5 /* NorrisBusinessTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D0512726F923190047F6F5 /* NorrisBusinessTest.swift */; };
 		E5D0512B26FB92850047F6F5 /* NorrisManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D0512A26FB92850047F6F5 /* NorrisManagerTests.swift */; };
@@ -485,10 +485,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5D0512826F923190047F6F5 /* NorrisBusinessTest.swift in Sources */,
-				E5D0512326F91FF40047F6F5 /* NorrisURLProtocolMock.swift in Sources */,
 				E51B5ADA26F83994008590A0 /* NorrisNetworkTest.swift in Sources */,
 				E5D0512B26FB92850047F6F5 /* NorrisManagerTests.swift in Sources */,
 				E5D0512626F920550047F6F5 /* ResultsMock.swift in Sources */,
+				E51A4FE62719060200FC46A2 /* NorrisURLProtocolMock.swift in Sources */,
 				E58FDAA027134899005043E7 /* PrettyJsonTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

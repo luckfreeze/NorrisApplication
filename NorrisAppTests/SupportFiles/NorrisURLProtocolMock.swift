@@ -20,6 +20,12 @@ class NorrisURLProtocolMock: URLProtocol {
     static var stubResponseData: Data?
     static var error: Error?
     
+    static func sessionConfiguration() -> URLSessionConfiguration {
+        let sessionConfiguration = URLSessionConfiguration.default
+        sessionConfiguration.protocolClasses = [NorrisURLProtocolMock.self]
+        return sessionConfiguration
+    }
+    
     override class func canInit(with request: URLRequest) -> Bool {
         return true
     }

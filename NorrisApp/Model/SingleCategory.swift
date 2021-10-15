@@ -26,6 +26,4 @@ class SingleCategory: Codable {
         case url
         case description = "value"
     }
-    
-//    init() {}
 }
