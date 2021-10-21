@@ -12,7 +12,7 @@
         <!--NorrisCat-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="NorrisCat" modalPresentationStyle="fullScreen" interfaceStyle="light" id="BYZ-38-t0r" customClass="CategoriesViewController" customModule="NorrisApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CategoriesVC" title="NorrisCat" modalPresentationStyle="fullScreen" interfaceStyle="light" id="BYZ-38-t0r" customClass="CategoriesViewController" customModule="NorrisApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -164,7 +164,7 @@ tente novamente</string>
         <!--Navigation Controller-->
         <scene sceneID="ANf-4r-6PM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zrP-qh-na2" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navCat" automaticallyAdjustsScrollViewInsets="NO" id="zrP-qh-na2" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gMD-HT-PrJ">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>

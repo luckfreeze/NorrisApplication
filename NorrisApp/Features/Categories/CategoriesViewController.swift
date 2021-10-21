@@ -13,7 +13,7 @@ class CategoriesViewController: UIViewController {
     @IBOutlet weak var errorView: UIView!
     @IBOutlet weak var loadingView: UIActivityIndicatorView!
     
-    lazy var manager = NorrisManager(delegate: self)
+    lazy var manager = CategoriesManager(delegate: self)
     
     var categories: [String]?
     

@@ -1,6 +1,0 @@
-framework module Pods_NorrisApp {
-  umbrella header "Pods-NorrisApp-umbrella.h"
-
-  export *
-  module * { export * }
-}

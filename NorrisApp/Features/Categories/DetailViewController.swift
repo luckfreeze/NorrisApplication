@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Kingfisher
 
 class DetailViewController: UIViewController {
     
@@ -16,7 +15,7 @@ class DetailViewController: UIViewController {
     
     var category: String?
     
-    lazy var manager = NorrisManager(delegate: self)
+    lazy var manager = CategoriesManager(delegate: self)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,8 +32,8 @@ class DetailViewController: UIViewController {
 }
 
 
-extension DetailViewController: NorrisManagerDelegate {
-    func handleSuccess(type: NorrisSuccessType) {
+extension DetailViewController: CategoriesManagerDelegate {
+    func handleSuccess(type: CategoriesSuccessType) {
         switch type {
             case .successOnCategory(let category):
                 loadDataOnScreen(using: category)
@@ -44,7 +43,7 @@ extension DetailViewController: NorrisManagerDelegate {
         }
     }
     
-    func handleError(type: NorrisErrorType) {
+    func handleError(type: CategoriesErrorType) {
         switch type {
             default:
             AlertService.default(in: self, with: "Ops", message: "Algo deu errado, não conseguimos completar seu pedido") {
@@ -59,8 +58,8 @@ extension DetailViewController: NorrisManagerDelegate {
             self.descriptionLabel.text = category.description
             let imageUrl = URL(string: category.iconUrl!)
             
-            let imageRecource = ImageResource(downloadURL: imageUrl!)
-            self.thumbImageView.kf.setImage(with: imageRecource) { result in
+            ImageCache.shared.getImage(using: imageUrl!) { image in
+                self.thumbImageView.image = image
                 self.animateImageViewAndLoading()
             }
         }
@@ -73,3 +72,4 @@ extension DetailViewController: NorrisManagerDelegate {
         }
     }
 }
+

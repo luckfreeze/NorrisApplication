@@ -20,5 +20,15 @@ class PrettyJsonTest: XCTestCase {
         
         XCTAssertNotNil(prettyJ)
     }
+    
+    func testPrettyJsonError() {
+        let data = """
+        {"name":  "version": "1.0.0"}
+        """.data(using: .utf8)!
+        
+        let prettyJsonOptonal = data.prettyJson
+        
+        XCTAssertNil(prettyJsonOptonal)
+    }
 
 }
