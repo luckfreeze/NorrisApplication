@@ -29,8 +29,7 @@
 		E51B5ADA26F83994008590A0 /* CategoriesNetworkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51B5AD926F83994008590A0 /* CategoriesNetworkTest.swift */; };
 		E58FDA9227124DC6005043E7 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58FDA9127124DC6005043E7 /* AlertService.swift */; };
 		E58FDAA027134899005043E7 /* PrettyJsonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58FDA9F27134899005043E7 /* PrettyJsonTest.swift */; };
-		E5CEB46427220558006453E1 /* NorrisAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CEB46327220558006453E1 /* NorrisAppUITests.swift */; };
-		E5CEB46627220558006453E1 /* NorrisAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CEB46527220558006453E1 /* NorrisAppUITestsLaunchTests.swift */; };
+		E5CEB4842722309F006453E1 /* NorrisAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CEB4832722309F006453E1 /* NorrisAppUITests.swift */; };
 		E5D0512626F920550047F6F5 /* ResultsMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D0512526F920550047F6F5 /* ResultsMock.swift */; };
 		E5D0512826F923190047F6F5 /* CategoriesBusinessTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D0512726F923190047F6F5 /* CategoriesBusinessTest.swift */; };
 		E5D0512B26FB92850047F6F5 /* CategoriesManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D0512A26FB92850047F6F5 /* CategoriesManagerTests.swift */; };
@@ -44,7 +43,7 @@
 			remoteGlobalIDString = 4B15AE2F25D15DA100B8E0D0;
 			remoteInfo = NorrisApp;
 		};
-		E5CEB46727220558006453E1 /* PBXContainerItemProxy */ = {
+		E5CEB4872722309F006453E1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4B15AE2825D15DA100B8E0D0 /* Project object */;
 			proxyType = 1;
@@ -79,9 +78,8 @@
 		E51B5ADB26F83994008590A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E58FDA9127124DC6005043E7 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		E58FDA9F27134899005043E7 /* PrettyJsonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettyJsonTest.swift; sourceTree = "<group>"; };
-		E5CEB46127220558006453E1 /* NorrisAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NorrisAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5CEB46327220558006453E1 /* NorrisAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorrisAppUITests.swift; sourceTree = "<group>"; };
-		E5CEB46527220558006453E1 /* NorrisAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorrisAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E5CEB4812722309F006453E1 /* NorrisAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NorrisAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5CEB4832722309F006453E1 /* NorrisAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorrisAppUITests.swift; sourceTree = "<group>"; };
 		E5D0512226F91FF40047F6F5 /* NorrisURLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorrisURLProtocolMock.swift; sourceTree = "<group>"; };
 		E5D0512526F920550047F6F5 /* ResultsMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsMock.swift; sourceTree = "<group>"; };
 		E5D0512726F923190047F6F5 /* CategoriesBusinessTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesBusinessTest.swift; sourceTree = "<group>"; };
@@ -103,7 +101,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E5CEB45E27220558006453E1 /* Frameworks */ = {
+		E5CEB47E2722309F006453E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -118,7 +116,7 @@
 			children = (
 				4B15AE3225D15DA100B8E0D0 /* NorrisApp */,
 				E51B5AD826F83994008590A0 /* NorrisAppTests */,
-				E5CEB46227220558006453E1 /* NorrisAppUITests */,
+				E5CEB4822722309F006453E1 /* NorrisAppUITests */,
 				4B15AE3125D15DA100B8E0D0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -128,7 +126,7 @@
 			children = (
 				4B15AE3025D15DA100B8E0D0 /* NorrisApp.app */,
 				E51B5AD726F83994008590A0 /* NorrisAppTests.xctest */,
-				E5CEB46127220558006453E1 /* NorrisAppUITests.xctest */,
+				E5CEB4812722309F006453E1 /* NorrisAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -300,11 +298,10 @@
 			path = ExtensionsTest;
 			sourceTree = "<group>";
 		};
-		E5CEB46227220558006453E1 /* NorrisAppUITests */ = {
+		E5CEB4822722309F006453E1 /* NorrisAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E5CEB46327220558006453E1 /* NorrisAppUITests.swift */,
-				E5CEB46527220558006453E1 /* NorrisAppUITestsLaunchTests.swift */,
+				E5CEB4832722309F006453E1 /* NorrisAppUITests.swift */,
 			);
 			path = NorrisAppUITests;
 			sourceTree = "<group>";
@@ -381,22 +378,22 @@
 			productReference = E51B5AD726F83994008590A0 /* NorrisAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E5CEB46027220558006453E1 /* NorrisAppUITests */ = {
+		E5CEB4802722309F006453E1 /* NorrisAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E5CEB46927220558006453E1 /* Build configuration list for PBXNativeTarget "NorrisAppUITests" */;
+			buildConfigurationList = E5CEB4892722309F006453E1 /* Build configuration list for PBXNativeTarget "NorrisAppUITests" */;
 			buildPhases = (
-				E5CEB45D27220558006453E1 /* Sources */,
-				E5CEB45E27220558006453E1 /* Frameworks */,
-				E5CEB45F27220558006453E1 /* Resources */,
+				E5CEB47D2722309F006453E1 /* Sources */,
+				E5CEB47E2722309F006453E1 /* Frameworks */,
+				E5CEB47F2722309F006453E1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E5CEB46827220558006453E1 /* PBXTargetDependency */,
+				E5CEB4882722309F006453E1 /* PBXTargetDependency */,
 			);
 			name = NorrisAppUITests;
 			productName = NorrisAppUITests;
-			productReference = E5CEB46127220558006453E1 /* NorrisAppUITests.xctest */;
+			productReference = E5CEB4812722309F006453E1 /* NorrisAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -415,7 +412,7 @@
 						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = 4B15AE2F25D15DA100B8E0D0;
 					};
-					E5CEB46027220558006453E1 = {
+					E5CEB4802722309F006453E1 = {
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = 4B15AE2F25D15DA100B8E0D0;
 					};
@@ -436,7 +433,7 @@
 			targets = (
 				4B15AE2F25D15DA100B8E0D0 /* NorrisApp */,
 				E51B5AD626F83994008590A0 /* NorrisAppTests */,
-				E5CEB46027220558006453E1 /* NorrisAppUITests */,
+				E5CEB4802722309F006453E1 /* NorrisAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -460,7 +457,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E5CEB45F27220558006453E1 /* Resources */ = {
+		E5CEB47F2722309F006453E1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -505,12 +502,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E5CEB45D27220558006453E1 /* Sources */ = {
+		E5CEB47D2722309F006453E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5CEB46427220558006453E1 /* NorrisAppUITests.swift in Sources */,
-				E5CEB46627220558006453E1 /* NorrisAppUITestsLaunchTests.swift in Sources */,
+				E5CEB4842722309F006453E1 /* NorrisAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,10 +518,10 @@
 			target = 4B15AE2F25D15DA100B8E0D0 /* NorrisApp */;
 			targetProxy = E51B5ADC26F83994008590A0 /* PBXContainerItemProxy */;
 		};
-		E5CEB46827220558006453E1 /* PBXTargetDependency */ = {
+		E5CEB4882722309F006453E1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4B15AE2F25D15DA100B8E0D0 /* NorrisApp */;
-			targetProxy = E5CEB46727220558006453E1 /* PBXContainerItemProxy */;
+			targetProxy = E5CEB4872722309F006453E1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -747,7 +743,7 @@
 			};
 			name = Release;
 		};
-		E5CEB46A27220558006453E1 /* Debug */ = {
+		E5CEB48A2722309F006453E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -771,7 +767,7 @@
 			};
 			name = Debug;
 		};
-		E5CEB46B27220558006453E1 /* Release */ = {
+		E5CEB48B2722309F006453E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -825,11 +821,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E5CEB46927220558006453E1 /* Build configuration list for PBXNativeTarget "NorrisAppUITests" */ = {
+		E5CEB4892722309F006453E1 /* Build configuration list for PBXNativeTarget "NorrisAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E5CEB46A27220558006453E1 /* Debug */,
-				E5CEB46B27220558006453E1 /* Release */,
+				E5CEB48A2722309F006453E1 /* Debug */,
+				E5CEB48B2722309F006453E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
